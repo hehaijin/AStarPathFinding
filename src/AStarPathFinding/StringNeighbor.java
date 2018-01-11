@@ -2,6 +2,17 @@ package AStarPathFinding;
 
 import java.util.ArrayList;
 
+// I include this file, because this is the first time I feel the power of algorithm in real projects.
+// We are asked to generate a graph connecting all workds in an dictionary, each word being a node, 
+// and each edge being one modification away from another work. And we want it as fast as possible.
+// Instead of optimizing the code on decide if each pair are neighors or not,
+// I first generate all posible neighbors and loot it up in the dictionary.
+// this reduced the complexity from O(N^2) to O(N)
+// as a result, my program finishes in 6 seconds, while the target running time is 1 minite.
+// The graph class uses this StringNeighbor class to generate the graph. 
+
+
+
 /**
  * This class has a static method that generate all possible neighbors for a
  * given string.
